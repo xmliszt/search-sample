@@ -35,20 +35,20 @@ export async function extractSearchFeature(key, track_id) {
   }
 }
 
-export async function performSearch(key, track_id, search) {
-  var page = 1;
+export async function performSearch(key, track_id, search, page) {
+  var data = {};
   var items_per_page = 1000;
   var results = await performSearchService(key, track_id, search, page, items_per_page);
-  var json = await results.json();
   if (results.ok) {
+    data = await results.json();
     return {
       success: true,
-      data: json
+      data: data
     };
   } else {
     return {
       success: false,
-      data: json.error
+      data: data.error
     };
   }
 }

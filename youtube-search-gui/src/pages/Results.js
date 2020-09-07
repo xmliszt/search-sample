@@ -16,6 +16,9 @@ class Results extends React.Component {
       videoID: "",
       searchText: "",
       searchResults: [],
+      currentSearchPage: 1,
+      totalPages: "...",
+      totalItems: "...",
       tableColumns: [],
       showSearchResults: false,
       loading: false,
@@ -97,21 +100,37 @@ class Results extends React.Component {
     this.toggleShowResultsTable(true);
     this.changeCardSize("80vw");
     var search = this.state.searchText;
+    var page = 1;
+    var data = {};
     this.toggleResultsLoading(true);
-    var results = await performSearch(this.state.key, this.state.videoID, search);
-    this.toggleResultsLoading(false);
+    var results = await performSearch(this.state.key, this.state.videoID, search, page);
     if (results.success) {
-      var data = results.data;
+      data = results.data;
       this.setState({
-        totalItems: data.total_tracks,
+        totalPages: data.total_pages,
+        totalItems: data.total_tracks
+      });
+      for (page=2; page<=this.state.totalPages; page++) {
+        this.setState({
+          currentSearchPage: page
+        });
+        results = await performSearch(this.state.key, this.state.videoID, search, page);
+        if (results.success) {
+          results.data.search_results.forEach(d => {
+            data.search_results.push(d);
+          })
+        }
+      }
+      this.setState({
         searchResults: makeData(data.search_results),
         tableColumns: makeColumns()
       });
-    } else {
+    }
+    else {
       message.error(results.data);
       this.toggleShowResultsTable(false);
     }
-    console.log(results);
+    this.toggleResultsLoading(false);
   }
 
   handleGoHome = () => {
@@ -137,7 +156,7 @@ class Results extends React.Component {
               <Tooltip title="Press 'Enter' to perform search">
                 <Input prefix={<SearchOutlined />} placeholder="Search..." onChange={this.handleSearchChange} onPressEnter={this.handleSearchEnter} allowClear />
               </Tooltip>
-              <Spin spinning={this.state.resultsLoading} tip="Fetching results...">
+              <Spin spinning={this.state.resultsLoading} tip={"Total tracks found: " + this.state.totalItems + " Fetching results... [Page " + this.state.currentSearchPage + " / " + this.state.totalPages + "]"}>
               {this.state.showSearchResults ? SearchResultsTable: null}
               </Spin>
             </Card>
