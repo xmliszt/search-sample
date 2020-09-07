@@ -1,0 +1,25 @@
+.Results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 80vh;
+}
+
+.ant-spin-nested-loading {
+  width: 100%;
+}
+
+.ant-card-hoverable {
+  cursor: auto !important;
+}
+
+.small-cross {
+  cursor: pointer;
+}
+
+.CardHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
