@@ -156,7 +156,7 @@ class Results extends React.Component {
               <Tooltip title="Press 'Enter' to perform search">
                 <Input prefix={<SearchOutlined />} placeholder="Search..." onChange={this.handleSearchChange} onPressEnter={this.handleSearchEnter} allowClear />
               </Tooltip>
-              <Spin spinning={this.state.resultsLoading} tip={"Total tracks found: " + this.state.totalItems + " Fetching results... [Page " + this.state.currentSearchPage + " / " + this.state.totalPages + "]"}>
+              <Spin spinning={this.state.resultsLoading} tip={"Total tracks found: " + this.state.totalItems + " Fetching results for [Page " + this.state.currentSearchPage + " / " + this.state.totalPages + "]"}>
               {this.state.showSearchResults ? SearchResultsTable: null}
               </Spin>
             </Card>

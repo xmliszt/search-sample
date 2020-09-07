@@ -65,3 +65,8 @@ You should see this page:
 * You can perform refined search by inputting in the search box and hit 'Enter' to search:
 
 ![](./docs/6.jpg)
+
+## Live Demo
+
+![Live Demo](./docs/demo.gif)
+
