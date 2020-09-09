@@ -17,7 +17,8 @@ var config = {
   headers: { 
     ...data.getHeaders()
   },
-  data : data
+  data : data,
+  maxBodyLength: 2000 // Change the maximum body length in bytes allowable for the request if you want to upload larger file
 };
 
 axios(config)
