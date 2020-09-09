@@ -17,6 +17,7 @@ Musiio Search Code Sample (./samples/)
 ```
 
 ## Table of Contents
+[YouTube Link Upload GUI Sample](#youtube-link-upload-gui-sample)
 
 [Postman Collection](#postman-collection)
 
@@ -100,6 +101,11 @@ Musiio Search Code Sample (./samples/)
 * [Perform Search](#perform-search-5)
 * [Get Search Dictionary](#get-search-dictionary-5)
 
+## YouTube Link Upload GUI Sample
+
+`./youtube-search-gui/`
+
+This folder contains a GUI sample in React that allows user to upload a YouTube track link and perform feature extractions and search on the selected tracks in the user's catalogue. The detailed documentation could be found [here](./youtube-search-gui/README.md)
 
 ## Postman Collection
 
