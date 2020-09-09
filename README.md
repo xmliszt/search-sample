@@ -16,7 +16,90 @@ Musiio Search Code Sample (./samples/)
 |--node/	(Node.js samples)
 ```
 
-[TOC]
+## Table of Contents
+
+[Postman Collection](#postman-collection)
+
+* [How to set up postman samples](#how-to-set-up-postman-samples)
+* [Add Track](#add-track)
+* [Update Track](#update-track)
+* [Get Track](#get-track)
+* [Delete Track](#delete-track)
+* [Catalog Info](#catalog-info)
+* [Upload File](#upload-file)
+* [Upload YouTube Link](#upload-youtube-link)
+* [Extract Search Features](#extract-search-features)
+* [Perform Search](#perform-search)
+* [Get Search Dictionary](#get-search-dictionary)
+
+[PHP Sample](#php-sample)
+
+* [Add Track](#add-track-1)
+* [Update Track](#update-track-1)
+* [Get Track](#get-track-1)
+* [Delete Track](#delete-track-1)
+* [Catalog Info](#catalog-info-1)
+* [Upload File](#upload-file-1)
+* [Upload YouTube Link](#upload-youtube-link-1)
+* [Extract Search Features](#extract-search-features-1)
+* [Perform Search](#perform-search-1)
+* [Get Search Dictionary](#get-search-dictionary-1)
+
+[JavaScript Sample](#javascript-sample)
+
+* [Add Track](#add-track-2)
+* [Update Track](#update-track-2)
+* [Get Track](#get-track-2)
+* [Delete Track](#delete-track-2)
+* [Catalog Info](#catalog-info-2)
+* [Upload File](#upload-file-2)
+* [Upload YouTube Link](#upload-youtube-link-2)
+* [Extract Search Features](#extract-search-features-2)
+* [Perform Search](#perform-search-2)
+* [Get Search Dictionary](#get-search-dictionary-2)
+
+[Python Sample](#python-sample)
+
+* [Set up running environment](#set-up-running-environment)
+* [Add Track](#add-track-3)
+* [Update Track](#update-track-3)
+* [Get Track](#get-track-3)
+* [Delete Track](#delete-track-3)
+* [Catalog Info](#catalog-info-3)
+* [Upload File](#upload-file-3)
+* [Upload YouTube Link](#upload-youtube-link-3)
+* [Extract Search Features](#extract-search-features-3)
+* [Perform Search](#perform-search-3)
+* [Get Search Dictionary](#get-search-dictionary-3)
+
+[Java Sample](#java-sample)
+
+* [Set up Maven project](#set-up-maven-project)
+* [Add Track](#add-track-4)
+* [Update Track](#update-track-4)
+* [Get Track](#get-track-4)
+* [Delete Track](#delete-track-4)
+* [Catalog Info](#catalog-info-4)
+* [Upload File](#upload-file-4)
+* [Upload YouTube Link](#upload-youtube-link-4)
+* [Extract Search Features](#extract-search-features-4)
+* [Perform Search](#perform-search-4)
+* [Get Search Dictionary](#get-search-dictionary-4)
+
+[Node.js Sample](#nodejs-sample)
+
+* [Set up running environment](#set-up-running-environment-1)
+* [Add Track](#add-track-5)
+* [Update Track](#update-track-5)
+* [Get Track](#get-track-5)
+* [Delete Track](#delete-track-5)
+* [Catalog Info](#catalog-info-5)
+* [Upload File](#upload-file-5)
+* [Upload YouTube Link](#upload-youtube-link-5)
+* [Extract Search Features](#extract-search-features-5)
+* [Perform Search](#perform-search-5)
+* [Get Search Dictionary](#get-search-dictionary-5)
+
 
 ## Postman Collection
 
